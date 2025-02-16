@@ -1,0 +1,480 @@
+/*
+filename: style.css
+author: Le Quang Dinh, Bui Minh Duc, Nguyen Xuan Nang Mai
+created: 08/02/2025
+last modified: 16/02/2025
+description: Project Part 1
+*/
+
+body{
+  font-family: 'Inter', sans-serif;
+}
+
+.index_page, .about_page {
+  scroll-behavior: smooth;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(banner.jpg);
+  background-size: cover;
+}
+
+.jobs {
+  display: flex;
+  align-items: flex-start; /* Aligns items at the top */
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.jobs-content {
+  flex: 1; /* Takes up remaining space */
+  padding-right: 20px; /* Creates space between content and aside */
+}
+
+.jobs h1 {
+  text-decoration: overline underline;
+  text-decoration-color: #ff5b0f;
+  font: 2.6em 'Verdana', sans-serif;
+}
+
+.jobs h2, em {
+  color: #ff5b0f;
+}
+
+.jobs h2 {
+  font-size: 2em;
+}
+
+nav {
+  display: flex;
+  margin: 40px 30px;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+  margin-left:60px;
+}
+
+nav ul {
+  border: 5px solid #fff;
+  padding: 30px 50px;
+  border-radius: 50px;
+  background-color: black;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-right: 50px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffab0f;
+  font-size: 15px;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.content{ /* this one is for both content of index and about*/
+  position: absolute;
+  left: 15%;
+  top:37%;
+}
+.content h1 {
+  font-size: 70px;
+  color: #fff;
+}
+.content p {
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+.animation,.content2, #add{ /*this one is the animation for both pages*/
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 1s linear forwards;
+}
+@keyframes moveup {
+  100%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
+
+.index_page strong {
+  color: #ffab0f;
+}
+
+dl, table, #add {
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  position: relative;
+}
+dt, dd {
+  padding: 10px;
+}
+dd{
+  margin-left: 70px;
+  color: #ffab0f;
+}
+#tutor {
+  margin-bottom: 50px;
+  color: #ffab0f;
+  font-size: 50px
+}
+table, th, td {
+  margin-top: 30px;
+  padding: 20px;
+  border: 4px solid #fff;
+  border-collapse: collapse;
+  width: 45%;
+  float: center;
+  text-align: center;
+  color: #ffab0f;
+}
+caption {
+  font-size: 50px;
+  color: #ffab0f;
+  margin-bottom: 30px;
+}
+#add {
+  margin-top: 200px;
+  text-align: center;
+}
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+}
+
+/* This one is for about page*/
+dl, table, #add {
+  color: #fff;
+  font-size: 20px;
+  font-style: italic;
+  position: relative;
+}
+dt, dd {
+  padding: 10px;
+}
+dd{
+  margin-left: 70px;
+  color: #ffab0f;
+}
+#tutor {
+  margin-bottom: 50px;
+  color: #ffab0f;
+  font-size: 50px
+}
+table, th, td {
+  margin-top: 30px;
+  padding: 20px;
+  border: 4px solid #fff;
+  border-collapse: collapse;
+  width: 45%;
+  float: center;
+  text-align: center;
+  color: #ffab0f;
+}
+caption {
+  font-size: 50px;
+  color: #ffab0f;
+  margin-bottom: 30px;
+}
+#add {
+  margin-top: 200px;
+  text-align: center;
+}
+.content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+}
+
+aside {
+  text-align: center;
+  position: sticky;
+  width: 25%;
+  top: 180px; /* Starts sticking */
+  background-color: rgba(255, 211, 175, 0.9);
+  border: 6px inset #ff5b0f;
+  border-radius: 12px;
+  padding: 4px;
+  margin-left: auto; /* Moves aside to the right */
+}
+
+footer {
+  background-image: url('footer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px
+}
+
+footer a {
+  text-decoration: underline;
+  color: white;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+.responsibilities, .essential {
+  padding: 2px 10px 2px 10px;
+  width: fit-content;
+}
+
+.responsibilities {
+  border: 5px hidden;
+  border-radius: 8px;
+  background-color: rgba(255, 211, 175, 0.9);
+}
+
+.essential {
+  border: 5px double #ff5b0f;
+  border-radius: 4px;
+}
+  
+#to-apply {
+    background-color: white; 
+    border: 2px solid #ff5b0f;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+  
+#to-apply:hover {
+    background-color: #ff5b0f;
+    color: white;
+}
+
+/* use flexbox layout and center content horizontally and vertically  */
+.grilledoctopus-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+/* make the formbox horizontally centered with 500 pixels max width */
+.grilloctopus-form-wrapper {
+  display: block;
+  margin: auto;
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  padding: 40px 30px 0 3px;
+}
+
+/* custom input box */
+.grilledoctopus-form-input {
+  padding: 13px 28px;
+  border-radius: 5px;
+  border: 2px solid #ecdde0;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  outline: none;
+}
+
+/* used for labels like Job reference number, Name, DoB,... */
+.grilledoctopus-form-label {
+  color: black;
+  font-size: 16px;
+  line-height: 24px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* simply make some space in the bottom and focus functions for labels */
+.grilledoctopus-mb-15 {
+  margin-bottom: 15px;
+}
+
+/* make 2 custom input box on the same line */
+.grilledoctopus-form-split>div {
+  display: flex;
+  gap: 20px;
+}
+
+/* custom fieldset for our form */
+.grilledoctopus-form-fieldset {
+  border: 2px solid #ecdde0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* custom horizontal line */
+hr {
+  border: 1px solid #ecdde0;
+}
+
+/* separately edit input form width for better navigation */
+.grilledoctopus-form-input-size-30 {
+  width: 30%;
+}
+
+/* CUSTOM RADIO INPUT */
+/* a container used for manipulating and customizing */
+.grilledoctopus-form-radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+/* hide the common radio input */
+.grilledoctopus-form-radio-container input[type="radio"] {
+  display: none;
+}
+
+/* locate Male, Female, Others */
+.grilledoctopus-form-radio-container label span {
+  display: flex;
+  align-items: center;
+  padding: 0px 10px 10px 10px;
+}
+
+/* make words of Gender turn red when move cursor to them */
+.grilledoctopus-form-radio-container label span:hover {
+  color: red;
+}
+
+/* custom radio input circle */
+.grilledoctopus-form-radio-container label span:before {
+  content: "";
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-shadow: inset 0 0 0 2px #ecdde0;
+}
+
+/* words stay red when click */
+.grilledoctopus-form-radio-container input[type="radio"]:checked+span {
+  color: red;
+}
+
+/* custom effect when select */
+.grilledoctopus-form-radio-container input[type="radio"]:checked+span:before {
+  box-shadow: inset 0 0 0 4px red;
+  transition: 0.25s;
+}
+
+/* CUSTOM RADIO INPUT */
+
+/*highlight input box when click */
+.grilledoctopus-form-input:focus {
+  border-color: #ff5b0f;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* highlight label when click the input box */
+.grilledoctopus-mb-15:focus-within .grilledoctopus-form-label {
+  color: red;
+}
+
+/* CUSTOM INPUT CHECKBOX */
+/* a container for better manipulating */
+.grilledoctopus-form-checkbox-container {
+  display: inline-block;
+  font-size: 15px;
+}
+
+/* custom checkbox */
+.grilledoctopus-form-fieldset input[type="checkbox"] {
+  margin-right: 10px;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 2px #ecdde0;
+  border-radius: 20%;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+/* highlight the checkbox that the cursor move to */
+.grilledoctopus-form-fieldset input[type="checkbox"]:hover {
+  background-color: #ecdde0;
+  transition: .25s;
+}
+
+/* custom checkbox effect when clicked */
+.grilledoctopus-form-fieldset input[type="checkbox"]:checked {
+  background-color: #ff5b0f;
+  box-shadow: inset 0 0 0 5px #ff5b0f;
+}
+
+/* CUSTOM INPUT CHECKBOX */
+
+/* custom text area */
+.textarea {
+  border: 2px solid #ecdde0;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  height: 100px;
+  width: 520px;
+  transition: all .25s;
+}
+
+/* hightlight text area when clicked */
+.textarea:focus {
+  outline: none;
+  border: 2px solid #ff5b0f;
+}
+
+/* custom submit button */
+input[type=submit] {
+  background-color: #ff5b0f;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  padding: 10px 22px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* highlight the submit button when the cursor move to */
+input[type=submit]:hover {
+  background-color: red;
+  transition: .25s;
+}
+
+/* custom reset button */
+input[type=reset] {
+  background-color: rgb(236, 236, 236);
+  border: none;
+  border-radius: 5%;
+  color: gray;
+  padding: 10px 22px;
+  text-decoration: none;
+  margin: 4px 2px;
+  font-size: 20px;
+  cursor: pointer;
+}
