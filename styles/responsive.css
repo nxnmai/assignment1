@@ -1,0 +1,190 @@
+/*
+filename: responsive.css
+author: Le Quang Dinh, Bui Minh Duc, Nguyen Xuan Nang Mai
+created: 18/02/2025
+last modified: 20/02/2025
+description: Responsive Design for Project Part 1
+*/
+
+/* media query for menu display */
+@media (max-width: 1303px) {
+    nav ul {
+        padding-right: 30px;
+    }
+    nav ul li {
+        margin: 0 30px;
+    }
+    nav ul li a{
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1068px) {
+    nav ul {
+        padding-right: 20px;
+    }
+    nav ul li {
+        margin: 0 10px;
+    }
+    nav ul li a{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 704px) {
+    nav ul {
+        padding-right: 10px;
+    }
+    nav ul li {
+        margin: 0 5px;
+    }
+    nav ul li a{
+        font-size: 9px;
+    }
+}
+
+/* media query for jobs.html tablet display: over 500px to 900px */
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .jobs {
+        padding: 12px;
+    }
+
+    .jobs h1 {
+        font-size: 34px;
+    }
+
+    aside {
+        padding: 2px;
+        top: 140px;
+        border: 2px inset #ff5b0f;
+        border-radius: 8px;
+        width: 30%
+    }
+
+    footer {
+        height: 45px;
+    }
+
+    footer ul {
+        font-size: 13px;
+    }
+
+    footer .logo {
+        width: 90px;
+    }
+}
+
+
+/* media query for jobs.html phone display: under 500px */
+@media screen and (max-width: 500px) {
+    .jobs {
+        padding: 7px;
+    }
+    
+    .jobs h1 {
+        font-size: 28px;
+    }
+
+    .jobs h2 {
+        font-size: 22px;
+    }
+
+    .jobs h3 {
+        font-size: 16px;
+    }
+
+    .jobs p {
+        font-size: 14px;
+    }
+
+    .responsibilities ul, ol, .essential ul, ol {
+        font-size: 14px;
+        padding-left: 1.1em;
+    }
+
+    .logo {
+        width: 130px;
+        margin-left: 0px;
+    }
+
+    aside {
+        padding: 2px;
+        top: 100px;
+        border: 2px inset #ff5b0f;
+        border-radius: 2px;
+        width: 30%
+    }
+
+    footer {
+        height: 35px;
+    }
+
+    footer ul {
+        font-size: 11px;
+    }
+
+    footer .logo {
+        width: 80px;
+    }
+
+    #to-apply {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* media query for index.html */
+@media (max-width: 1207px){
+    .homepage {
+        margin: 60px 100px;
+    }
+    .homepage h1, #tech {
+        font-size: 50px;
+    }
+    .homepage h2 {
+        font-size: 25px;
+    }
+    .homepage p {
+        font-size: 15px;
+    }
+    .homepage strong {
+        font-size: 20px;
+    }
+}
+@media (max-width: 908px){
+    .homepage {
+        margin: 30px 70px;
+    }
+    .homepage h1,#tech {
+        font-size: 40px;
+    }
+    .homepage h2 {
+        font-size: 20px;
+    }
+    .homepage p {
+        font-size: 15px;
+    }
+    .homepage strong {
+        font-size: 15px;
+    }
+}
+@media (max-width:600px){
+    .homepage {
+        margin: 20px 20px;
+    }
+}
+
+/* media query for about.html */
+@media (max-width: 939px){
+    .about {
+        display:block;
+    }
+    table {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 648px){
+    table {
+        margin: 60px 20px;
+    }
+}

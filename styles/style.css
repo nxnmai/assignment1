@@ -3,46 +3,22 @@ filename: style.css
 author: Le Quang Dinh, Bui Minh Duc, Nguyen Xuan Nang Mai
 created: 08/02/2025
 last modified: 16/02/2025
-description: Project Part 1
+description: Style for Project Part 1
 */
 
+/* applies for body of all pages */
 body{
   font-family: 'Inter', sans-serif;
 }
 
+/* applies background for only index page and about page */
 .index_page, .about_page {
   scroll-behavior: smooth;
   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(banner.jpg);
   background-size: cover;
 }
 
-.jobs {
-  display: flex;
-  align-items: flex-start; /* Aligns items at the top */
-  max-width: 1700px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.jobs-content {
-  flex: 1; /* Takes up remaining space */
-  padding-right: 20px; /* Creates space between content and aside */
-}
-
-.jobs h1 {
-  text-decoration: overline underline;
-  text-decoration-color: #ff5b0f;
-  font: 2.6em 'Verdana', sans-serif;
-}
-
-.jobs h2, em {
-  color: #ff5b0f;
-}
-
-.jobs h2 {
-  font-size: 2em;
-}
-
+/* menu bar for all pages */
 nav {
   display: flex;
   margin: 40px 30px;
@@ -50,12 +26,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: relative;
-}
-
-.logo {
-  width: 150px;
-  cursor: pointer;
-  margin-left:60px;
 }
 
 nav ul {
@@ -80,25 +50,41 @@ nav ul li a:hover {
   color: #fff;
 }
 
-.content{ /* this one is for both content of index and about*/
-  position: absolute;
-  left: 15%;
-  top:37%;
+/* logo image */
+.logo {
+  width: 150px;
+  cursor: pointer;
+  margin-left:60px;
 }
-.content h1 {
+
+/* styles for index page */
+.homepage { 
+  margin: 90px 200px;
+}
+
+.homepage h1 {
   font-size: 70px;
   color: #fff;
 }
-.content p {
+
+.homepage h2 {
+  font-size: 40px;
+}
+
+.homepage p {
   font-size: 20px;
   color: #fff;
-  margin-top: 20px;
+  margin: 20px 60px;
+  list-style: none;
 }
-.animation,.content2, #add{ /*this one is the animation for both pages*/
+
+/* animation for index page and about page */
+.homepage,.about, #add{
   opacity: 0;
   transform: translateY(30px);
   animation: moveup 1s linear forwards;
 }
+
 @keyframes moveup {
   100%{
       opacity: 1;
@@ -106,28 +92,34 @@ nav ul li a:hover {
   }
 }
 
-.index_page strong {
+/* orange colour for emphasizing text of <strong> and <h2> elements in index page */
+.index_page strong, h2 {
   color: #ffab0f;
 }
 
+/* styles for the content of the about page */
 dl, table, #add {
   color: #fff;
   font-size: 20px;
   font-style: italic;
   position: relative;
 }
+
 dt, dd {
   padding: 10px;
 }
+
 dd{
   margin-left: 70px;
   color: #ffab0f;
 }
+
 #tutor {
   margin-bottom: 50px;
   color: #ffab0f;
   font-size: 50px
 }
+
 table, th, td {
   margin-top: 30px;
   padding: 20px;
@@ -138,87 +130,79 @@ table, th, td {
   text-align: center;
   color: #ffab0f;
 }
+
+table {
+  margin-right: 6%;
+}
+
 caption {
   font-size: 50px;
   color: #ffab0f;
   margin-bottom: 30px;
 }
+
 #add {
   margin-top: 200px;
-  text-align: center;
+  text-align: left;
 }
-.content2 {
+
+.about {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-left: 100px;
 }
 
-/* This one is for about page*/
-dl, table, #add {
-  color: #fff;
-  font-size: 20px;
-  font-style: italic;
-  position: relative;
-}
-dt, dd {
-  padding: 10px;
-}
-dd{
-  margin-left: 70px;
-  color: #ffab0f;
-}
-#tutor {
-  margin-bottom: 50px;
-  color: #ffab0f;
-  font-size: 50px
-}
-table, th, td {
-  margin-top: 30px;
+/* styles for the content of job description page */
+.jobs {
+  display: flex;
+  align-items: flex-start; /* aligns items at the top */
+  max-width: 1700px;
+  margin: 0 auto;
   padding: 20px;
-  border: 4px solid #fff;
-  border-collapse: collapse;
-  width: 45%;
-  float: center;
-  text-align: center;
-  color: #ffab0f;
-}
-caption {
-  font-size: 50px;
-  color: #ffab0f;
-  margin-bottom: 30px;
-}
-#add {
-  margin-top: 200px;
-  text-align: center;
-}
-.content2 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-left: 100px;
 }
 
+.jobs-content {
+  flex: 1; /* takes up remaining space */
+  padding-right: 20px; /* creates space between content and aside */
+}
+
+.jobs h1 {
+  text-decoration: overline underline;
+  text-decoration-color: #ff5b0f;
+  font: 2.6em 'Verdana', sans-serif; /* using short-hand font property for <h1> */
+}
+
+.jobs h2, em {
+  color: #ff5b0f;
+}
+
+.jobs h2 {
+  font-size: 2em;
+}
+
+/* benefits aside element on job description page */
 aside {
   text-align: center;
   position: sticky;
-  width: 25%;
-  top: 180px; /* Starts sticking */
+  width: 25%; /* takes up 25% of the width of page */
+  top: 180px; /* starts sticking at 180px */
   background-color: rgba(255, 211, 175, 0.9);
-  border: 6px inset #ff5b0f;
+  border: 6px inset #ff5b0f; /* coloured border */
   border-radius: 12px;
-  padding: 4px;
-  margin-left: auto; /* Moves aside to the right */
+  padding: 4px; /* appropriate padding */
+  margin-left: auto; /* float to the right */
 }
 
+/* footer for all pages */
 footer {
   background-image: url('footer.png');
-  background-size: cover;
+  background-size: cover; /* footer cover the full width of page */
   background-position: center;
   background-repeat: no-repeat;
   height: 70px;
   color: white;
-  text-align: center;
+  text-align: center; /* text centred in the footer */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -234,6 +218,7 @@ footer li {
   list-style-type: none;
 }
 
+/* highlight important sections in the job description */
 .responsibilities, .essential {
   padding: 2px 10px 2px 10px;
   width: fit-content;
@@ -250,6 +235,7 @@ footer li {
   border-radius: 4px;
 }
   
+/* styles for the button that redirects to the apply page */
 #to-apply {
     background-color: white; 
     border: 2px solid #ff5b0f;
@@ -263,12 +249,14 @@ footer li {
     cursor: pointer;
     transition-duration: 0.5s;
 }
-  
+
+/* hover effect for the button */
 #to-apply:hover {
     background-color: #ff5b0f;
     color: white;
 }
 
+/* styles for the apply page */
 /* use flexbox layout and center content horizontally and vertically  */
 .grilledoctopus-main-wrapper {
   display: flex;
