@@ -153,6 +153,11 @@ caption {
   margin-left: 100px;
 }
 
+#group-photo {
+  width: 25%;
+  margin-left: 80px;
+}
+
 /* styles for the content of job description page */
 .jobs {
   display: flex;
