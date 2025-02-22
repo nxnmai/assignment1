@@ -142,7 +142,6 @@ table, th, td {
   border: 4px solid #fff;
   border-collapse: collapse;
   width: 45%;
-  float: center;
   text-align: center;
   color: #ffab0f;
 }
@@ -234,7 +233,7 @@ footer {
   padding: 20px
 }
 
-footer a {
+footer a, .homepage a {
   text-decoration: underline;
   color: white;
 }
