@@ -14,7 +14,7 @@ body{
 /* applies background for only index page and about page */
 .index_page, .about_page {
   scroll-behavior: smooth;
-  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(banner.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/banner.jpg);
   background-size: cover;
 }
 
@@ -220,7 +220,7 @@ aside {
 
 /* footer for all pages */
 footer {
-  background-image: url('footer.png');
+  background-image: url('images/footer.png');  /* footer background image reference: https://wisynco.com/wp-content/uploads/2014/12/footer-background-02.png */
   background-size: cover; /* footer cover the full width of page */
   background-position: center;
   background-repeat: no-repeat;
