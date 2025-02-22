@@ -186,6 +186,10 @@ caption {
   font-size: 2em;
 }
 
+.jobs .no-showing {
+  list-style-type: none;
+}
+
 /* benefits aside element on job description page */
 aside {
   text-align: center;
