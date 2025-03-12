@@ -94,8 +94,8 @@ nav ul li:hover::after {
   list-style: none;
 }
 
-/* animation for index page and about page */
-.homepage,.about, #add{
+/* animation for index page, about page, and job description page */
+.homepage,.about, .animation, #add{
   opacity: 0;
   transform: translateY(30px);
   animation: moveup 1s linear forwards;
